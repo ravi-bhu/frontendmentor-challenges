@@ -35,8 +35,9 @@ body {
   background-color: var(--color-dark-grey);
   display: flex;
   flex-direction: column;
+  padding: 2rem 3rem;
   align-items: center;
-  min-width: 30rem;
+  border-radius: 0.5rem;
 }
 
 .name {
@@ -63,9 +64,12 @@ body {
   width: 20rem;
   cursor: pointer;
   text-align: center;
+  font-weight: bold;
+  transition: all ease 0.2s;
 }
 
 .link:hover {
-  background-color: var(--color-light-grey);
-  transition: all ease 0.3s;
+  background-color: var(--color-green);
+  color: var(--color-off-black);
+  transition: all ease 0.2s;
 }
