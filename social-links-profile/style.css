@@ -1,0 +1,71 @@
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 20%);
+  --color-light-grey: hsl(0, 0%, 25%);
+  --color-dark-grey: hsl(0, 0%, 12%);
+  --color-off-black: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-off-black);
+  color: var(--color-white);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  border-radius: 500px;
+}
+
+.card {
+  background-color: var(--color-dark-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 30rem;
+}
+
+.name {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.location {
+  color: var(--color-green);
+  font-size: 1.1rem;
+}
+
+.designation {
+  margin: 1.5rem 0;
+}
+
+.link {
+  text-decoration: none;
+  background-color: var(--color-grey);
+  border: inherit;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--color-white);
+  width: 20rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: var(--color-light-grey);
+  transition: all ease 0.3s;
+}
